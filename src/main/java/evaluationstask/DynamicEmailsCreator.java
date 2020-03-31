@@ -45,7 +45,7 @@ public class DynamicEmailsCreator {
         List<String> result = new ArrayList(emails.keySet());
         final StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < users.length; i++)
-            stringBuilder.append(users[i].trim()).append(" <").append(result.get(i)).append(emailPattern).append(";");
+            stringBuilder.append(users[i].trim()).append(" <").append(result.get(i)).append(emailPattern).append("; ");
 
         String response = stringBuilder.toString();
         return response.substring(0, response.length() - 2);
